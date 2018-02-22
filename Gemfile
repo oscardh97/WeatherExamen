@@ -15,6 +15,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
+gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'bootstrap-form'
 
 
 group :development, :test do
@@ -24,6 +27,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'wdm', '>= 0.1.0' 
 end
 
@@ -42,4 +46,3 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
