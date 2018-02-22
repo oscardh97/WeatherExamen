@@ -18,7 +18,6 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'bootstrap-form'
-gem "pg", "0.20.0"
 
 
 group :development, :test do
@@ -27,6 +26,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
   gem 'wdm', '>= 0.1.0' 
 end
@@ -34,6 +34,7 @@ end
 
 group :production do
   #comment
+  gem "pg", "0.20.0"
 end
 
 group :development do
