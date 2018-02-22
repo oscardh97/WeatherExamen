@@ -15,7 +15,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
-gem 'wdm', '>= 0.1.0' 
 
 
 group :development, :test do
@@ -25,6 +24,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'sqlite3'
+  gem 'wdm', '>= 0.1.0' 
 end
 
 
