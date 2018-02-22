@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @location.name %>
+</p>
+<strong>Name:</strong>
+<p>
+  <tbody>
+    <% @location.recordings.each do |recording| %>
+      <tr>
+        <td><%= recording.location.name %></td>
+        <td><%= recording.tempt %></td>
+        <td><%= recording.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+	
+</p>
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>
